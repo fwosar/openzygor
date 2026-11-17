@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>OpenZygor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" type="module"></script>
+  </head>
+  <body>
+    <div id="app"><div class="boot">Starting OpenZygor…</div></div>
+    <dialog id="confirm-dialog" aria-labelledby="confirm-title">
+      <h2 id="confirm-title">Uninstall guides?</h2>
+      <p>
+        This removes the selected Zygor addon, including custom files, from WoW.
+        A recovery copy is kept in the hidden OpenZygor folder inside AddOns.
+        WoW character settings are preserved.
+      </p>
+      <div class="dialog-actions">
+        <button id="confirm-no" class="secondary">Keep guides</button
+        ><button id="confirm-yes" class="danger">Uninstall</button>
+      </div>
+    </dialog>
+  </body>
+</html>
